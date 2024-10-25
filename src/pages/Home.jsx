@@ -3,6 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Home.css'; // Include the floating animation CSS
 import profileImage from '../assets/profile.jpg'; // Update path to your image
+import { FaLinkedin, FaGithub, FaBitbucket } from 'react-icons/fa';
+
 
 const Home = () => {
   return (
@@ -26,7 +28,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-4 text-blue-600 z-10"
       >
-        Hi, I'm [Your Name] 👋
+        Hi, I'm Thushanth Subramaniam 👋
       </motion.h1>
 
       <motion.p
@@ -35,9 +37,7 @@ const Home = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="text-lg text-center text-gray-700 max-w-2xl mb-8 z-10"
       >
-        I’m a passionate web developer specializing in creating beautiful and
-        functional user experiences. I love building modern, responsive, and
-        visually appealing websites.
+        I'm a passionate software engineer with a strong command of PHP, Python, Java, SQL, JavaScript, and more. I excel in developing web applications using frameworks like Laravel, CodeIgniter, and Spring Boot, as well as frontend technologies including Vue.js, React, and HTML/CSS. My goal is to create innovative solutions that make a real impact.
       </motion.p>
 
       {/* CTA Button */}
@@ -52,24 +52,53 @@ const Home = () => {
 
       {/* Social Icons */}
       <div className="flex space-x-4 mt-8 z-10">
-        <motion.div
-          whileHover={{ scale: 1.2, rotate: 10 }}
-          className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+      {/* <motion.div
+        
+        whileHover={{ scale: 1.2, rotate: 10 }}
+        className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
         >
-          <img src="/assets/linkedin-icon.png" alt="LinkedIn" width="32" />
+        <FaLinkedin size={32} className="text-blue-500" />
         </motion.div>
         <motion.div
-          whileHover={{ scale: 1.2, rotate: -10 }}
-          className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+        whileHover={{ scale: 1.2, rotate: -10 }}
+        className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
         >
-          <img src="/assets/github-icon.png" alt="GitHub" width="32" />
+        <FaGithub size={32} className="text-gray-700" />
         </motion.div>
         <motion.div
-          whileHover={{ scale: 1.2, rotate: 10 }}
-          className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+        whileHover={{ scale: 1.2, rotate: 10 }}
+        className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
         >
-          <img src="/assets/twitter-icon.png" alt="Twitter" width="32" />
-        </motion.div>
+        <FaBitbucket size={32} className="text-blue-600" />
+        </motion.div> */}
+
+            <motion.div
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+            >
+            <a href="https://linkedin.com/in/thushanth-subramaniam-15764b1a8" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={32} className="text-blue-500" />
+            </a>
+            </motion.div>
+
+            <motion.div
+            whileHover={{ scale: 1.2, rotate: -10 }}
+            className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+            >
+            <a href="https://github.com/ThushanthSbm" target="_blank" rel="noopener noreferrer">
+                <FaGithub size={32} className="text-gray-700" />
+            </a>
+            </motion.div>
+
+            <motion.div
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            className="p-4 bg-white rounded-full shadow-lg cursor-pointer"
+            >
+            <a href="https://bitbucket.org/customer-address-book-webco/workspace/overview/" target="_blank" rel="noopener noreferrer">
+                <FaBitbucket size={32} className="text-blue-600" />
+            </a>
+            </motion.div>
+
       </div>
     </div>
   );

@@ -1,0 +1,27 @@
+/* src/pages/About.css */
+.about-container {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .social-links a {
+    transition: transform 0.3s;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-info div {
+    font-size: 1.2rem;
+  }
+  
+  .contact-info .text-sm {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
