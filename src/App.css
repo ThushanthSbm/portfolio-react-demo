@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css */
+.logo {
+  height: 40px; /* or any desired height */
+  margin-right: 10px; /* space between logo and text */
+}
+
